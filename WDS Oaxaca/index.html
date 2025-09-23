@@ -3,39 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Hepta+Slab:wght@1..900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website Design System: Oaxaca</title>
 </head>
 <body>
     <header>
-        <h1>Oaxaca</h1>
-        <h4>Website Design System</h4>
+        <div class="header__text">
+            <h1>Oaxaca</h1>
+            <h3>Website Design System</h3>
+        </div>
     </header>
     <nav>
         <ul>
-            <li><a href="#showroom"></a></li>
-            <li><a href="#fonts"></a></li>
-            <li><a href="#colors"></a></li>
-            <li><a href="#text-styles"></a></li>
-            <li><a href="#about"></a></li>
+            <li><a href="#showroom">Showroom</a></li>
+            <li><a href="#fonts">Fonts</a></li>
+            <li><a href="#colors">Colors</a></li>
+            <li><a href="#text-styles">Text Styles</a></li>
+            <li><a href="#about">About</a></li>
         </ul>
     </nav>
     <main>
         <section class="showroom" id="showroom">
             <h2>Showroom</h2>
             <div class="grid cards">
-                <div class="card"><img src="" alt=""></div>
-                <div class="card"><img src="" alt=""></div>
-                <div class="card"><img src="" alt=""></div>
-                <div class="card"><img src="" alt=""></div>
-                <div class="card"><img src="" alt=""></div>
-                <div class="card"><img src="" alt=""></div>
-                <div class="card"><img src="" alt=""></div>
-                <div class="card"><img src="" alt=""></div>
+                <div class="card"><img src="Images/Ejemplo 1.PNG" alt=""></div>
+                <div class="card"><img src="Images/ejemplo 2.PNG" alt=""></div>
+                <div class="card"><img src="Images/header.jpg" alt=""></div>
+
             </div>
         </section>
-        <section class="fonts">
+        <section class="fonts" id="fonts">
             <h2>Fonts</h2>
             <div class="grid">
                 <div class="font"></div>
@@ -46,7 +46,7 @@
                 <div class="font__use"></div>
             </div>
         </section>
-        <secion class="colors">
+        <secion class="colors" id="colors">
             <div class="grid cards">
                 <div class="card"></div>
                 <div class="card"></div>
@@ -55,7 +55,7 @@
                 <div class="card"></div>
             </div>
         </secion>
-        <section class="text-styles">
+        <section class="text-styles" id="text-styles">
             <h1>H1: Main page heading</h1>
             <ol>
                 <li>Font-weight: 700 (bold)</li>
@@ -76,8 +76,8 @@
             </ol>
 
         </section>
-        <section class="about">
-            <h5>About</h5>
+        <section class="about" id="about">
+            <h3>About</h3>
             <p>This is a personal selection of what as a Oaxacan I consider as great to represent Oaxaca's culture.</p>
             <p>If you like to ask anything else to improve or asses your implementation, please contact me.</p>
 

@@ -5,3 +5,124 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+:root{
+  /*  <-- Paleta de colores --> */
+
+  /* CSS HEX */
+  --brilliant-rose: #EA58A6ff;
+  --peach-yellow: #FADDA5ff;
+  --champagne-pink: #FBDDC9ff;
+  --light-blue: #AED5D8ff;
+  --antiflash-white: #EEEFF3ff;
+  --night: #070c0eff;
+
+  --gradient: linear-gradient(to bottom right, var(--brilliant-rose), var(--peach-yellow), var(--champagne-pink), var(--light-blue));
+
+}
+
+body{
+  font-family: Gabarito,"Montserrat Alternates",system-ui, -apple-system, sans-serif;
+  text-align: center;
+  background-color: var(--antiflash-white);
+}
+
+a:link{
+  color: var(--brilliant-rose);
+}
+
+a:visited{
+  color: var(--light-blue)
+}
+a:hover{
+  color: var(--night);
+}
+a:active{
+  color: var(--light-blue)
+}
+
+/* <-- HEADER --> */
+
+header{
+  position: relative;
+  background-image: url(./Images/Blob_Background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-block: 5%;
+
+}
+
+header::before{
+   content: "";
+   z-index: 1;
+   position: absolute;
+   inset: 0;
+   background: rgb(0,0,0,.2);
+}
+
+header * {
+  position: relative;
+  z-index: 2;
+}
+
+.header__text{
+  margin: 0 auto;
+  background-color: #AED5D8dd;
+  color: var(--brilliant-rose);
+  border: .125rem solid var(--champagne-pink);
+  border-radius: 2rem;
+  padding: 1.125rem .5rem;
+  max-width: 60%;
+  min-width: 50%;
+  z-index: 2;
+  backdrop-filter: blur(.25rem);
+}
+
+header h1 {
+  text-transform: uppercase;
+  font-size: 5rem;
+}
+
+header h3{
+  font-size: 1.2rem;
+  letter-spacing: .3rem;
+}
+
+/* <-- NAV --> */
+nav{
+  margin-top: 1rem;
+  font-size: 1.125rem;
+}
+
+nav ul{
+  display: flex;
+  gap: 2rem;
+  text-decoration: none;
+  justify-content: center;
+  list-style-type: none;
+  background-color: #AED5D8dd;
+  border: .125rem solid var(--champagne-pink);
+  border-radius: 2rem;
+  max-width: 80%;
+  margin: 0 auto;
+  padding: .5rem 1rem;
+}
+
+nav li a{
+  text-decoration: none;
+}
+
+/* <-- SHOWROOM --> */
+
+.showroom h2 {
+  font-size: 3rem;
+  color: var(--brilliant-rose);
+}
+
+.showroom{
+  margin: 2rem auto;
+  max-width: 80%;
+  padding-bottom: 2rem;
+  border-bottom: .125rem solid var(--champagne-pink);
+}
