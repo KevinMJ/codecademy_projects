@@ -18,8 +18,9 @@
   --night: #070c0eff;
 
   --gradient: linear-gradient(to bottom right, var(--brilliant-rose), var(--peach-yellow), var(--champagne-pink), var(--light-blue));
-
 }
+
+/* <-- General Styles --> */
 
 body{
   font-family: Gabarito,"Montserrat Alternates",system-ui, -apple-system, sans-serif;
@@ -39,6 +40,12 @@ a:hover{
 }
 a:active{
   color: var(--light-blue)
+}
+
+h2 {
+  font-size: 3rem;
+  color: var(--brilliant-rose);
+  padding-bottom: .5rem;;
 }
 
 /* <-- HEADER --> */
@@ -115,14 +122,74 @@ nav li a{
 
 /* <-- SHOWROOM --> */
 
-.showroom h2 {
-  font-size: 3rem;
-  color: var(--brilliant-rose);
-}
-
 .showroom{
   margin: 2rem auto;
   max-width: 80%;
   padding-bottom: 2rem;
   border-bottom: .125rem solid var(--champagne-pink);
+
+  .grid{
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
 }
+
+.grid{
+  display: grid;
+  gap: .5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.card{
+  width: 90%;
+  overflow: hidden;
+  border: .125rem solid var(--champagne-pink);
+  border-radius: 2rem;
+  box-shadow: 0 1px 3px 0 rgba(96, 84, 75, 0.5);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* <-- FONTS --> */
+
+.fonts{
+  margin: 2rem auto;
+  max-width: 80%;
+  padding-bottom: 2rem;
+  border-bottom: .125rem solid var(--champagne-pink);
+
+
+  .grid{
+    grid-template-columns: 2fr 5fr;
+  }
+
+  .font, .font__use{
+    padding: .5rem 1rem;
+    border: .125rem solid var(--champagne-pink);
+    border-radius: 2rem;
+    box-shadow: 0 1px 3px 0 rgba(96, 84, 75, 0.5);
+    background-color: var(--antiflash-white);
+    min-height: 100%;
+  }
+
+  .font__use{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+h3{
+  font-size: 1.5rem;
+  color: var(--brilliant-rose);
+  padding-bottom: .5rem;
+}
+
+
+/* <-- TEXT STYLES --> */
+
