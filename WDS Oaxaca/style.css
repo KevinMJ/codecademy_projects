@@ -48,6 +48,13 @@ h2 {
   padding-bottom: .5rem;;
 }
 
+section{
+  margin: 2rem auto;
+  max-width: 80%;
+  padding-bottom: 2rem;
+  border-bottom: .125rem solid var(--champagne-pink);
+}
+
 /* <-- HEADER --> */
 
 header{
@@ -105,7 +112,6 @@ nav{
 nav ul{
   display: flex;
   gap: 2rem;
-  text-decoration: none;
   justify-content: center;
   list-style-type: none;
   background-color: #AED5D8dd;
@@ -120,18 +126,14 @@ nav li a{
   text-decoration: none;
 }
 
-/* <-- SHOWROOM --> */
+ul{
+  list-style-type: none;
+}
 
-.showroom{
-  margin: 2rem auto;
-  max-width: 80%;
-  padding-bottom: 2rem;
-  border-bottom: .125rem solid var(--champagne-pink);
-
-  .grid{
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  }
-
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 .grid{
@@ -149,20 +151,18 @@ nav li a{
   box-shadow: 0 1px 3px 0 rgba(96, 84, 75, 0.5);
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
+/* <-- SHOWROOM --> */
+
+.showroom{
+  .grid{
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
 }
 
 /* <-- FONTS --> */
 
 .fonts{
-  margin: 2rem auto;
-  max-width: 80%;
-  padding-bottom: 2rem;
-  border-bottom: .125rem solid var(--champagne-pink);
-
 
   .grid{
     grid-template-columns: 2fr 5fr;
@@ -181,6 +181,11 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    p{
+      font-size: 1.5rem;
+      line-height: 1.5;
+    }
   }
 }
 
@@ -190,6 +195,70 @@ h3{
   padding-bottom: .5rem;
 }
 
+.font__use:nth-child(2){
+  font-family: 'Gabarito', sans-serif;
+}
+
+.font__use:nth-child(4){
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.font__use:nth-child(6){
+  font-family: "Hepta Slab", serif;
+}
+
+/* <-- COLORS --> */
+
+.colors{
+
+  .grid{
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .color{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+    padding: 1rem;
+    border: .125rem solid var(--champagne-pink);
+    border-radius: 2rem;
+    box-shadow: 0 1px 3px 0 rgba(96, 84, 75, 0.5);
+  }
+
+  .color--primary{
+    background-color: #EEEFF3ff;   
+  }
+  
+  .color--secondary{
+    background-color: #FADDA5ff;
+  }
+
+  .color--accent{
+    background-color: #EA58A6ff;
+
+    h3{
+      color: var(--antiflash-white);
+    }
+  }
+
+  .color--dark{
+    background-color: #070c0eff;
+    p{
+      color: var(--antiflash-white);
+    }
+  }
+
+  .color--medium{
+    background-color: #FBDDC9ff;
+    
+  }
+
+  .color--light{
+    background-color: #AED5D8ff;
+  }
+  
+}
 
 /* <-- TEXT STYLES --> */
 
