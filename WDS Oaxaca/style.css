@@ -23,7 +23,7 @@
 /* <-- General Styles --> */
 
 body{
-  font-family: Gabarito,"Montserrat Alternates",system-ui, -apple-system, sans-serif;
+  font-family: 'Gabarito' ,"Montserrat Alternates",system-ui, -apple-system, sans-serif;
   text-align: center;
   background-color: var(--antiflash-white);
 }
@@ -45,7 +45,7 @@ a:active{
 h2 {
   font-size: 3rem;
   color: var(--brilliant-rose);
-  padding-bottom: .5rem;;
+  padding-bottom: .5rem;
 }
 
 section{
@@ -53,6 +53,17 @@ section{
   max-width: 80%;
   padding-bottom: 2rem;
   border-bottom: .125rem solid var(--champagne-pink);
+}
+
+.flex-container{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+h1{
+  font-family: 'Montserrat Alternates', sans-serif;
 }
 
 /* <-- HEADER --> */
@@ -124,10 +135,6 @@ nav ul{
 
 nav li a{
   text-decoration: none;
-}
-
-ul{
-  list-style-type: none;
 }
 
 img {
@@ -262,3 +269,37 @@ h3{
 
 /* <-- TEXT STYLES --> */
 
+.text-styles{
+h1{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--brilliant-rose);
+    padding-bottom: .5rem;
+  }
+
+  .card h2{
+    font-size: 1.5rem;
+    color: var(--brilliant-rose);
+    padding-bottom: .5rem;
+  }
+
+  p{
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--night);
+    padding-bottom: .5rem;
+  }
+
+  li{
+    list-style-position: inside;
+  }
+
+  .flex-container{
+    flex-direction: column;
+  }
+
+  .card{
+    padding: .5rem;
+  }
+}
